@@ -1,0 +1,117 @@
+@charset "utf-8";
+*{box-sizing: border-box;}
+html, body{margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+
+#headerSearch {
+    display: flex;
+    position: relative;
+}
+#headerSearch .top_wrap {
+    width: 100%;
+    height: 30px;
+    margin: 10px;
+    display: flex;
+}
+
+#headerSearch .top_wrap img {
+    float: left;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#headerSearch .top_wrap .top_logo a img {
+    width: 75px;
+    height: 100%;    
+}
+
+#headerSearch .top_wrap .top_search_wrap{
+    width: calc(100% - 24px - 5px );
+    height: 24px;
+    border-bottom: 1px solid #000;
+    margin: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#headerSearch .top_wrap .search_input{
+    width: calc(100% - 24px );
+    height: 24px;
+    
+}
+
+#headerSearch .top_wrap .search_icon a img{
+    width: 24px;
+    height: 24px;
+    float: right;
+    
+}
+
+#headerSearch .top_wrap a img{
+    width: 34px;
+    height: 34px;
+}
+
+/*메뉴항목*/
+
+.menu_top{
+    width: 100%;
+    height: 48px;
+    white-space: nowrap; 
+    overflow: auto;
+    position: absolute
+    left: 10px; top: 50px;
+    background-color: #fff;
+}
+.menu_top ul{}
+.menu_top ul li{
+    display: inline-block;
+    line-height: 48px;
+}
+::-webkit-scrollbar {display: none;} 
+.menu_top a span{
+    font-size: 16px;
+    color: #666;
+    padding: 0 8px;    
+}
+
+.menu_top ul li .top_menu {
+    width: 20%;
+    height: 20px;
+}
+.Fixed {
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+
+/*베스트셀러 메뉴*/
+#bestseller{
+    width: 100%;
+}
+#bestseller a span{
+    width: calc(100% / 3);
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+
+.sales_ad_random img{
+    width: 100%;
+
+}
+
+.bestSeller_notice{
+    color: #999;
+    background-color: #eee;
+}
